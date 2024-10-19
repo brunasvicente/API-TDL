@@ -17,6 +17,7 @@ endpoints.post('/tdl/usuarios/inserir/', async (req, resp) => {
         }
         else {
             let token = gerarToken(usuario)
+            
             resp.send({
                 "token": token
             })
