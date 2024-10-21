@@ -71,3 +71,4 @@ endpoints.get('/tdl/usuarios/consulta/:id', async (req, resp) => {
 })
 
 export default endpoints;
+
