@@ -39,8 +39,7 @@ endpoints.get('/tdl/usuarios/consulta/', async (req, resp) => {
 
         if (usuario === null) {
             resp.send({ erro: "Usuário ou senha incorreto(s)." })
-        }
-        else {
+        } else {
             let token = gerarToken(usuario)
             resp.send({
                 "token": token
